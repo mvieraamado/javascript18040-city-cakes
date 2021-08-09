@@ -125,6 +125,6 @@ $(document).ready(function() {
 
   // Click (muestra modal)
   $('#buttonConfirmar').click(
-    compraRealizada();
-  );
+    compraRealizada()
+    );
 });
