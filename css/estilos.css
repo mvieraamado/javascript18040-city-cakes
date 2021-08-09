@@ -1,0 +1,291 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Inria Serif", serif;
+  font-weight: 400;
+}
+
+nav {
+  margin: 0;
+  width: 100%;
+  max-height: auto;
+  min-height: 70px;
+}
+
+nav .itemMenu {
+  padding-left: 15px;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+nav .itemMenu:hover {
+  text-decoration: underline;
+}
+
+.carousel-control-prev {
+  width: 60px;
+}
+
+.miCaption h1 {
+  padding-top: 30px;
+  padding-bottom: 25px;
+  font-family: "Inria Serif", serif;
+  font-size: 70px;
+  font-weight: 600;
+  text-align: center;
+  color: white;
+}
+
+.miCaption p {
+  font-family: "Inria Serif", serif;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 400;
+  text-align: center;
+  color: white;
+}
+
+#nosotros {
+  width: 100%;
+  height: 100%;
+  background-color: #fbfbfb;
+}
+
+#nosotros .contenedorInicio1 {
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+}
+
+#nosotros .contenedorInicio2 {
+  width: 100%;
+  height: 100%;
+  padding: 5px 40px 5px;
+}
+
+#nosotros .contenedorInicio2 h3 {
+  margin: 0;
+  padding-top: 20px;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+#nosotros .contenedorInicio2 h4 {
+  margin: 0;
+  padding-top: 20px;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #949494;
+}
+
+#nosotros .contenedorInicio2 p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+#nuestrosProductos {
+  margin: 0.1px;
+  width: 100%;
+  height: 100%;
+  padding: 80px 0 30px;
+  background-color: #fbfbfb;
+}
+
+#nuestrosProductos h3 {
+  width: 100%;
+  background-image: url(../img/slide1.jpg);
+  height: 160px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 2.3rem;
+  font-style: italic;
+  color: #ffffff;
+  letter-spacing: 5px;
+}
+
+#nuestrosProductos h4 {
+  width: 100%;
+  font-size: 1.9rem;
+  font-style: italic;
+  font-weight: 500;
+  color: #141313;
+  text-align: center;
+}
+
+#nuestrosProductos .seccionCarrito {
+  width: 100%;
+  height: 100%;
+  padding: 20px 25px 10px;
+}
+
+#nuestrosProductos .seccionCarrito .cityCarrito {
+  -webkit-box-shadow: 2px 3px 2px 2px #EFE8FF;
+  box-shadow: 2px 3px 5px 2px #EFE8FF;
+}
+
+#nuestrosProductos .seccionCarrito .cityCarrito h3 {
+  font-family: "Inria Serif", serif;
+  font-weight: 500;
+  font-size: 2rem;
+  font-style: italic;
+}
+
+#nuestrosProductos .seccionCarrito .botonDelete {
+  background-color: #c58888;
+}
+
+#nuestrosProductos .seccionCarrito .list-group-item {
+  font-family: "Inria Serif", serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+  border: none;
+  background-color: #fbfbfb;
+  color: #121213;
+}
+
+#nuestrosProductos .seccionCarrito #botonVaciar {
+  border: none;
+  background-color: #f0d3ae;
+  -webkit-box-shadow: 2px 3px 2px 2px #EFE8FF;
+  box-shadow: 1px 3px 5px 2px #EFE8FF;
+}
+
+#nuestrosProductos .seccionCarrito #botonVaciar:hover {
+  background-color: #f0aa70;
+}
+
+#nuestrosProductos .seccionCarrito #iniciarCompra {
+  background-color: #f0d3ae;
+  -webkit-box-shadow: 2px 3px 2px 2px #EFE8FF;
+  box-shadow: 1px 3px 5px 2px #EFE8FF;
+}
+
+#nuestrosProductos .seccionCarrito #iniciarCompra:hover {
+  background-color: #f0aa70;
+}
+
+#nuestrosProductos .cityCarrito {
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+#nuestrosProductos .cityCarrito h3 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+#nuestrosProductos h4 {
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+#nuestrosProductos #items {
+  background-color: #fbfbfb;
+}
+
+#nuestrosProductos .miCard {
+  background-color: #fbfbfb;
+  border: none;
+}
+
+#nuestrosProductos .miCard button {
+  border: none;
+  background-color: #f0d3ae;
+  -webkit-box-shadow: 2px 3px 2px 2px #d3cccc;
+  box-shadow: 2px 3px 2px 2px #ddd3d8;
+}
+
+#nuestrosProductos .miCard button:hover {
+  background-color: #f0aa70;
+}
+
+#nuestrosProductos h5 {
+  margin-top: 15px;
+  font-size: 17px;
+}
+
+#datosUsuario {
+  background-image: url(../img/slideOne.jpg);
+  background-size: cover;
+  background-position: center;
+  max-width: 100%;
+  min-width: auto;
+  max-height: 100%;
+  min-height: auto;
+  display: none;
+  padding: 150px 80px 70px;
+}
+
+#resumenCompra {
+  padding: 100px;
+  background-image: url(../img/slideOne.jpg);
+  background-size: cover;
+  background-position: center;
+  max-width: 100%;
+  min-width: auto;
+  max-height: 100%;
+  min-height: auto;
+  display: none;
+}
+
+#resumenCompra .contenedorResumen {
+  max-width: 100%;
+  min-width: auto;
+  max-height: 100%;
+  min-height: auto;
+}
+
+.buttonColor {
+  background-color: #f0d3ae;
+  border: none;
+}
+
+.buttonColor:hover {
+  background-color: #f0aa70;
+}
+
+.modal-content {
+  background-color: #f0ece4;
+}
+
+.modal-content h5 {
+  font-family: "Inria Serif", serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+.modal-content .acceptButton {
+  background-color: #f0d2ab;
+  border: none;
+  -webkit-box-shadow: 2px 3px 2px 2px #EFE8FF;
+  box-shadow: 1px 3px 5px 2px #EFE8FF;
+}
+
+#myModal h4 {
+  font-family: "Inria Serif", serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+#footerContacto {
+  max-width: 100%;
+  min-width: auto;
+  height: 100%;
+  border-top: 1px solid silver;
+  padding: 25px;
+  background-color: #fbfbfb;
+}
+
+#footerContacto p {
+  color: white;
+  font-weight: 400;
+}
+/*# sourceMappingURL=estilos.css.map */

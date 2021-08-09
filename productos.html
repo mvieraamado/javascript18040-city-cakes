@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Productos | City ​​cakes</title>
+    <meta charset="UTF-8">
+	<meta name="description" content="City Cakes, recetas 100% artesanales. Ciudad de Córdoba.">
+	<meta name="author" content="City Cakes">
+    <meta property="og:title" content="City Cakes">
+	<meta property="og:site_name" content="City Cakes">
+	<meta property="og:description" content="City Cakes, recetas 100% artesanales. Ciudad de Córdoba.">
+	<meta property="og:image" content="https://mvieraamado.github.io/javascript-city-cakes/img/logo.png">
+	<meta name="distribution" content="global">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/iconocity.png">
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:ital,wght@0,400;0,500;1,600&display=swap" rel="stylesheet">
+    <!--styles-->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light container-fluid">
+        <a class="navbar-brand mr-4" href="index.html">City Cakes</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav">
+                <li class="nav-item active itemMenu">
+                    <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item itemMenu">
+                    <a class="nav-link" href="productos.html">Productos</a>
+                </li>
+                <li class="nav-item itemMenu">
+                    <a class="nav-link" href="#footerContacto" id="footerButton">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--Seccion de Productos-->
+    <section id="nuestrosProductos" class="container-fluid"> 
+        <div class="row w-100 m-0">
+            <h3 class="col-sm-12 p-5">NUESTROS PRODUCTOS</h3>
+            <div id="items" class="row col-sm-8 w-100 h-100">   
+            </div>
+            <!-- Carrito -->
+            <div class="seccionCarrito col-sm-4 m-0">
+                <div class="cityCarrito col-sm-12">
+                    <h4>Carrito</h4>
+                    <!-- Elementos del carrito -->
+                    <ul id="carrito" class="list-group"></ul>
+                    <hr>
+                    <!-- Precio total -->
+                    <p class="text-right">Total: $<span id="total"></span></p>
+                    <button id="botonVaciar" class="btn">Vaciar</button>
+                    <button id="iniciarCompra" class="btn">Iniciar compra</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Seccion solicitar datos al usuario-->
+    <section id="datosUsuario" class="container">
+        <h4 class="pb-4"> Ingrese sus datos</h4>
+        <form id="formulario" class="row needs-validation" novalidate ><!--Formulario-->
+            <div class="col-md-6">
+                <input type="text" class="form-control" id="nombre" placeholder="Nombre" required>
+                <div class="valid-feedback">Válido.</div>
+                <div class="invalid-feedback">Por favor, completa este campo.</div>
+            </div>
+            <div class="col-md-6">
+                <input type="text" class="form-control" id="apellido" placeholder="Apellido" required>
+                <div class="valid-feedback">Válido.</div>
+                <div class="invalid-feedback">Por favor, completa este campo.</div>
+            </div>
+            <div class="col-12 mt-4">
+                <input type="text" class="form-control" id="direccion" placeholder="Dirección" required>
+                <div class="valid-feedback">Válido.</div>
+                <div class="invalid-feedback">Por favor, completa este campo.</div>
+            </div>
+            <div class="col-md-6 mt-4">
+                <select id="provincia" class="multisteps-form__input form-control" required>
+                    <option selected disabled value="" id="provincia">Provincia</option>
+                </select>
+                <div class="valid-feedback">Válido.</div>
+                <div class="invalid-feedback">Por favor, completa este campo.</div>
+            </div>
+            <div class="col-12 mt-4">
+                <input type="number" class="form-control" id="telefono" placeholder="Telefono" aria-describedby="telefonoHelp"required>
+                <div class="valid-feedback">Válido.</div>
+                <div class="invalid-feedback">Por favor, completa este campo.</div>
+            </div>
+            <div class="col-12 mt-4">
+                <input type="email" class="form-control" id="email" placeholder="Email" required>
+                <div class="valid-feedback">Válido.</div>
+                <div class="invalid-feedback">Por favor, completa este campo.</div>
+            </div>
+            <div class="col-12 d-flex justify-content-around pt-4">
+                <button type="button" id="buttonVolver1" class="btn buttonColor">Volver</button>
+                <button type="submit" id="buttonStyle" class="btn buttonColor">Enviar datos</button>
+            </div>
+        </form>
+    </section>
+    <!--Resumen de la compra-->
+    <section id="resumenCompra" class="container">
+    </section>
+    <!--Footer start-->
+    <footer id="footerContacto" class="container-fluid">
+        <div class="row d-flex justify-content-lg-center">
+            <h4 class="col-8 text-center">Contáctanos</h4>
+            <div class="col-8 p-2 d-flex justify-content-center">
+                <img src="img/telephonel.svg" alt="telefono">
+                <span>351-3412820</span>
+            </div>
+            <div class="col-8 p-2 d-flex justify-content-center">
+                <img src="img/geol.svg" alt="ubicación">
+                <span>Córdoba, Argentina</span>
+            </div>
+        </div>
+    </footer>
+    <!--JavaScript-->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/purchase-process.js"></script>
+    <script src="js/code.js"></script>
+    <script src="js/api-provincias.js"></script>
+</body>
+</html>
